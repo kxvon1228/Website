@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empower Studios - Professional Recording Studio in Baltimore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text { background: linear-gradient(135deg, #FFD700, #FFA500); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-bg { background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-black text-white sticky top-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-text">
+                    🎤 EMPOWER STUDIOS
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-yellow-400 transition-colors">Home</a>
+                    <a href="#booking" class="hover:text-yellow-400 transition-colors">Booking</a>
+                    <a href="#services" class="hover:text-yellow-400 transition-colors">Services</a>
+                    <a href="#calendar" class="hover:text-yellow-400 transition-colors">Calendar</a>
+                    <a href="#contact" class="hover:text-yellow-400 transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    🔥 <span class="gradient-text">STUDIO SALE</span> – BALTIMORE 🔥
+                </h1>
+                <div class="text-2xl md:text-3xl mb-8 space-y-2">
+                    <p class="text-yellow-400 font-semibold">Book 4 Hours for Just $100</p>
+                    <p class="text-lg text-red-400 font-bold">⏰ LIMITED TIME ONLY ⏰</p>
+                    <p class="text-lg">Use Promo Code: <span class="bg-yellow-400 text-black px-3 py-1 rounded font-bold">EMPRWR</span></p>
+                </div>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-8 text-lg">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt text-yellow-400"></i>
+                        <span>Baltimore, MD</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-phone text-yellow-400"></i>
+                        <span>Call or Text: 443-210-0929</span>
+                    </div>
+                </div>
+                <button onclick="scrollToBooking()" class="bg-yellow-400 text-black px-8 py-4 rounded-lg text-xl font-bold hover:bg-yellow-300 transition-colors transform hover:scale-105">
+                    Book Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Empower Studios -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Why Empower Studios?</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="text-yellow-500 text-2xl">🎚️</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Industry-level gear</h3>
+                            <p class="text-gray-600">Professional equipment for studio-quality recordings</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="text-yellow-500 text-2xl">🔊</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Clean vocal mixing & mastering</h3>
+                            <p class="text-gray-600">Expert audio engineering for polished final tracks</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="text-yellow-500 text-2xl">📍</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Local to Baltimore</h3>
+                            <p class="text-gray-600">Convenient location in the heart of Baltimore</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="text-yellow-500 text-2xl">⚡</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Fast turnaround</h3>
+                            <p class="text-gray-600">Quick delivery without compromising quality</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-8 text-center">
+                    <div class="text-8xl mb-4">🎵</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Professional Studio Setup</h3>
+                    <p class="text-gray-600">State-of-the-art recording equipment and acoustically treated rooms for the best sound quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Studio Services -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Studio Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-8 shadow-lg card-hover">
+                    <div class="text-4xl mb-4 text-center">⏰</div>
+                    <h3 class="text-2xl font-bold text-center mb-4 text-gray-800">Hourly Recording</h3>
+                    <div class="text-center mb-6">
+                        <span class="text-3xl font-bold text-yellow-500">$35</span>
+                        <span class="text-gray-600">/hour</span>
+                    </div>
+                    <ul class="space-y-2 mb-6 text-gray-600">
+                        <li>✓ Professional recording</li>
+                        <li>✓ Engineer included</li>
+                        <li>✓ High-quality equipment</li>
+                    </ul>
+                    <button onclick="scrollToBooking()" class="w-full bg-yellow-400 text-black py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors">
+                        Book Now
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg card-hover border-4 border-yellow-400 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-4 py-1 rounded-full text-sm font-bold">
+                        LIMITED TIME
+                    </div>
+                    <div class="text-4xl mb-4 text-center">🔥</div>
+                    <h3 class="text-2xl font-bold text-center mb-4 text-gray-800">4-Hour Deal</h3>
+                    <div class="text-center mb-6">
+                        <span class="text-3xl font-bold text-yellow-500">$100</span>
+                        <span class="text-gray-600"> w/ code EMPRWR</span>
+                    </div>
+                    <ul class="space-y-2 mb-6 text-gray-600">
+                        <li>✓ 4 full hours of recording</li>
+                        <li>✓ Save $40 vs hourly rate</li>
+                        <li>✓ Perfect for full projects</li>
+                    </ul>
+                    <button onclick="scrollToBooking()" class="w-full bg-yellow-400 text-black py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors">
+                        Book Now
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg card-hover">
+                    <div class="text-4xl mb-4 text-center">🎛️</div>
+                    <h3 class="text-2xl font-bold text-center mb-4 text-gray-800">Mixing & Mastering</h3>
+                    <div class="text-center mb-6">
+                        <div class="text-lg font-bold text-yellow-500">Mixing: $25</div>
+                        <div class="text-lg font-bold text-yellow-500">Mix + Master: $40</div>
+                    </div>
+                    <ul class="space-y-2 mb-6 text-gray-600">
+                        <li>✓ Professional mixing</li>
+                        <li>✓ Radio-ready mastering</li>
+                        <li>✓ Multiple revisions</li>
+                    </ul>
+                    <button onclick="scrollToBooking()" class="w-full bg-yellow-400 text-black py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Calendar -->
+    <section id="calendar" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Book Your Session</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6 text-gray-800">Schedule Your Time</h3>
+                            <form class="space-y-4">
+                                <div>
+                                    <label class="block text-gray-700 font-semibold mb-2">Select Date</label>
+                                    <input type="date" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 font-semibold mb-2">Select Time</label>
+                                    <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent">
+                                        <option>10:00 AM</option>
+                                        <option>12:00 PM</option>
+                                        <option>2:00 PM</option>
+                                        <option>4:00 PM</option>
+                                        <option>6:00 PM</option>
+                                        <option>8:00 PM</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 font-semibold mb-2">Service</label>
+                                    <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent">
+                                        <option>4-Hour Deal ($100) - LIMITED TIME</option>
+                                        <option>Hourly Recording ($35/hr)</option>
+                                        <option>Mixing Only ($25)</option>
+                                        <option>Mixing + Mastering ($40)</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6 text-gray-800">Your Details</h3>
+                            <form class="space-y-4">
+                                <div>
+                                    <label class="block text-gray-700 font-semibold mb-2">Full Name</label>
+                                    <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent" placeholder="Your name">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                                    <input type="email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent" placeholder="your@email.com">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 font-semibold mb-2">Phone</label>
+                                    <input type="tel" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent" placeholder="443-210-0929">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 font-semibold mb-2">Promo Code</label>
+                                    <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent" placeholder="EMPRWR" value="EMPRWR">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-center">
+                        <button onclick="showBookingConfirmation()" class="bg-yellow-400 text-black px-8 py-4 rounded-lg text-xl font-bold hover:bg-yellow-300 transition-colors transform hover:scale-105">
+                            Confirm Booking & Pay Deposit
+                        </button>
+                        <p class="text-gray-600 mt-4">Secure payment via Stripe, Cash App, or PayPal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Reviews -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">What Our Clients Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-6 shadow-lg">
+                    <div class="flex mb-4">
+                        <span class="text-yellow-400">★★★★★</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Amazing studio quality and the engineer really knows his stuff. Got my track sounding radio-ready!"</p>
+                    <div class="font-semibold text-gray-800">- Marcus J.</div>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-lg">
+                    <div class="flex mb-4">
+                        <span class="text-yellow-400">★★★★★</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The 3-hour deal is perfect for recording a full EP. Great value and professional results."</p>
+                    <div class="font-semibold text-gray-800">- Sarah M.</div>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-lg">
+                    <div class="flex mb-4">
+                        <span class="text-yellow-400">★★★★★</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Fast turnaround and clean mixes. Definitely coming back for my next project!"</p>
+                    <div class="font-semibold text-gray-800">- DJ Tony</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect With Us -->
+    <section id="contact" class="bg-black text-white py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Connect With Us</h2>
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-3xl mb-4">📍</div>
+                    <h3 class="font-semibold mb-2">Location</h3>
+                    <p class="text-gray-300">Baltimore, MD</p>
+                </div>
+                <div>
+                    <div class="text-3xl mb-4">📞</div>
+                    <h3 class="font-semibold mb-2">Phone</h3>
+                    <p class="text-gray-300">443-210-0929</p>
+                </div>
+                <div>
+                    <div class="text-3xl mb-4">📧</div>
+                    <h3 class="font-semibold mb-2">Email</h3>
+                    <p class="text-gray-300">mixedbykxvon@gmail.com</p>
+                </div>
+                <div>
+                    <div class="text-3xl mb-4">📲</div>
+                    <h3 class="font-semibold mb-2">Social</h3>
+                    <p class="text-gray-300">@mixedbykxvon</p>
+                    <p class="text-gray-300">@empowerstudios</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold gradient-text mb-4">🎤 EMPOWER STUDIOS</h3>
+                    <p class="text-gray-400">Professional recording studio in Baltimore, MD. Industry-level gear, expert mixing, and fast turnaround.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="#" class="block text-gray-400 hover:text-yellow-400 transition-colors">Terms of Service</a>
+                        <a href="#" class="block text-gray-400 hover:text-yellow-400 transition-colors">Privacy Policy</a>
+                        <a href="#" class="block text-gray-400 hover:text-yellow-400 transition-colors">FAQ</a>
+                        <a href="#contact" class="block text-gray-400 hover:text-yellow-400 transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl text-gray-400 hover:text-yellow-400 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-2xl text-gray-400 hover:text-yellow-400 transition-colors">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="text-2xl text-gray-400 hover:text-yellow-400 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Empower Studios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Confirmation Modal -->
+    <div id="bookingModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-8 max-w-md mx-4">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Booking Confirmation</h3>
+            <p class="text-gray-600 mb-6">Your booking request has been received! We'll contact you within 24 hours to confirm your session and process payment.</p>
+            <div class="flex gap-4">
+                <button onclick="closeBookingModal()" class="flex-1 bg-gray-300 text-gray-700 py-2 px-4 rounded-lg hover:bg-gray-400 transition-colors">
+                    Close
+                </button>
+                <button onclick="callStudio()" class="flex-1 bg-yellow-400 text-black py-2 px-4 rounded-lg hover:bg-yellow-300 transition-colors">
+                    Call Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function scrollToBooking() {
+            document.getElementById('calendar').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function showBookingConfirmation() {
+            document.getElementById('bookingModal').classList.remove('hidden');
+            document.getElementById('bookingModal').classList.add('flex');
+        }
+
+        function closeBookingModal() {
+            document.getElementById('bookingModal').classList.add('hidden');
+            document.getElementById('bookingModal').classList.remove('flex');
+        }
+
+        function callStudio() {
+            window.location.href = 'tel:443-210-0929';
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.md\\:hidden button');
+        const mobileMenu = document.querySelector('.md\\:flex');
+        
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', function() {
+                // This would toggle mobile menu - simplified for demo
+                alert('Mobile menu would open here');
+            });
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96033e844107e5c1',t:'MTc1MjY4NzIwMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
